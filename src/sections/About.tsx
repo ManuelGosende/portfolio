@@ -22,7 +22,7 @@ export const About = () => {
         >
           <Typography variant="h2" color="secondary.main">I’M MANUEL GOSENDE</Typography>
           <Typography variant="h3" color="primary.main">GRAPHIC DESIGNER & FRONTEND DEVELOPER</Typography>
-          <Typography variant="body1" color="primary.main">I'm based in Tandil, Argentina, passionate about using technology to create software that combines functionality and UX/UI to improve everyday life and transform the way people interact with the virtual world.
+          <Typography variant="body1" color="primary.light">I'm based in Tandil, Argentina, passionate about using technology to create software that combines functionality and UX/UI to improve everyday life and transform the way people interact with the virtual world.
           I have a solid knowledge of HTML, CSS, JavaScript, TypeScript and React. Looking at design, I can transform it into responsive web pages with meticulous attention to detail. I am always eager to stay up-to-date with the latest web development tools and technologies.
           Currently, I am exploring React Native to apply my skills to app development.</Typography>
         </FlexBox>

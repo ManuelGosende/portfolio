@@ -1,17 +1,18 @@
-import { Theme, useMediaQuery, useTheme } from "@mui/material";
 import { createTheme } from '@mui/material/styles';
 
 export const theme = createTheme({
   typography: {
     h1: {
       fontSize: '3rem',
+      letterSpacing: '0.03em',
       '@media (max-width:960px)': {
-        fontSize: '2.75rem',
+        fontSize: '1.5rem',
       },
       fontFamily: 'MonumentUltrabold, sans-serif',
     },
     h2: {
       fontSize: '2rem',
+      letterSpacing: '0.06em',
       '@media (max-width:960px)': {
         fontSize: '0.75rem',
       },
@@ -19,6 +20,7 @@ export const theme = createTheme({
     },
     h3: {
       fontSize: '1.25rem',
+      letterSpacing: '0.06em',
       '@media (max-width:960px)': {
         fontSize: '0.625rem',
       },
@@ -26,7 +28,7 @@ export const theme = createTheme({
     },
     body1: {
       fontSize: '0.875rem',
-      fontFamily: 'MonumentRegular, sans-serif',
+      fontFamily: 'Poppins, sans-serif',
       lineHeight: '1.5rem',
       '@media (max-width:960px)': {
         fontSize: '0.438rem',
@@ -35,7 +37,7 @@ export const theme = createTheme({
     },
     body2: {
       fontSize: '0.625rem',
-      fontFamily: 'MonumentRegular, sans-serif',
+      fontFamily: 'Poppins, sans-serif',
       lineHeight: '0.938rem',
       '@media (max-width:960px)': {
         fontSize: '0.3rem',
@@ -52,7 +54,7 @@ export const theme = createTheme({
       main: '#07AA79',
     },
   },
-  spacing: [0, 10, 20, 23, 40, 60], // spacing(1): 0px, spacing(2): 10px, spacing(3): 20px ....
+  spacing: [0, 10, 20, 23, 40, 60, 200], // spacing(1): 0px, spacing(2): 10px, spacing(3): 20px ....
   breakpoints: {
     values: {
       xs: 0,

@@ -12,8 +12,8 @@ export const App = () => {
         alignItems="center"
       >
         <About />
-{/*         <Experience />
-        <Skills />
+        <Experience />
+{/*         <Skills />
         <LinksToProjects />
         <Contact /> */}
       </FlexBox>
