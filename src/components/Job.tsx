@@ -1,5 +1,5 @@
-import { Box, Divider, Typography, Theme, useMediaQuery, useTheme } from "@mui/material";
-import { FlexBox } from "./";
+import { Divider, Typography, Theme, useMediaQuery, useTheme } from "@mui/material";
+import { FlexBox, Image } from "./";
 
 interface JobProps {
   company: string;
@@ -47,7 +47,7 @@ export const Job: React.FC<JobProps> = ({ company, time, position, description, 
     <FlexBox
       flexDirection={downMd ? "column" : "row"}
       alignItems="center"
-      gap={downMd ? theme.spacing(1) : theme.spacing(6)}
+      gap={downMd ? theme.spacing(1) : theme.spacing(7)}
     >
       <Typography
         variant="body1"
@@ -58,15 +58,10 @@ export const Job: React.FC<JobProps> = ({ company, time, position, description, 
       >
         { description }
       </Typography>
-      <Box
+      <Image
         width={downMd ? "35px" : "70px"}
         height={downMd ? "35px" : "70px"}
-        style={{
-          backgroundImage: icon,
-          backgroundSize: 'contain',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
+        image={icon}
       />
     </FlexBox>
   </FlexBox>

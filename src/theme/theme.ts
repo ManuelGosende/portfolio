@@ -31,17 +31,14 @@ export const theme = createTheme({
       fontFamily: 'Poppins, sans-serif',
       lineHeight: '1.5rem',
       '@media (max-width:960px)': {
-        fontSize: '0.438rem',
-        lineHeight: '0.8rem',
+        fontSize: '0.6rem',
+        lineHeight: '1rem',
       },
     },
     body2: {
       fontSize: '0.625rem',
       fontFamily: 'Poppins, sans-serif',
       lineHeight: '0.938rem',
-      '@media (max-width:960px)': {
-        fontSize: '0.3rem',
-      },
     },
   },
   palette: {
@@ -54,7 +51,7 @@ export const theme = createTheme({
       main: '#07AA79',
     },
   },
-  spacing: [0, 10, 20, 23, 40, 60, 200], // spacing(1): 0px, spacing(2): 10px, spacing(3): 20px ....
+  spacing: [0, 10, 20, 23, 40, 60, 100, 200], // spacing(0): 0px, spacing(1): 10px, spacing(2): 20px ....
   breakpoints: {
     values: {
       xs: 0,

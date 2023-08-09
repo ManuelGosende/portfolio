@@ -19,7 +19,8 @@ export const Container: React.FC<ContainerProps> = ({backgroundImage, children }
       style={{
         backgroundImage: backgroundImage,
         backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
       }}
     >
       { children }

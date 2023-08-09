@@ -13,8 +13,8 @@ export const App = () => {
       >
         <About />
         <Experience />
-{/*         <Skills />
-        <LinksToProjects />
+        <Skills />
+{/*         <LinksToProjects />
         <Contact /> */}
       </FlexBox>
     </ThemeProvider>

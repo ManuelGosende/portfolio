@@ -3,3 +3,5 @@ export { FlexBox } from './FlexBox';
 export { NavBar } from './NavBar';
 export { Border } from './Border';
 export { Job } from './Job';
+export { Image } from './Image';
+export { Profession } from './Profession';

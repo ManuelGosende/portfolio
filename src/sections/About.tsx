@@ -1,5 +1,5 @@
 import { Box, Divider, Typography, Theme, useMediaQuery, useTheme } from "@mui/material";
-import { Container, Border, FlexBox } from "../components";
+import { Container, Border, FlexBox, Image } from "../components";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -26,15 +26,10 @@ export const About = () => {
           I have a solid knowledge of HTML, CSS, JavaScript, TypeScript and React. Looking at design, I can transform it into responsive web pages with meticulous attention to detail. I am always eager to stay up-to-date with the latest web development tools and technologies.
           Currently, I am exploring React Native to apply my skills to app development.</Typography>
         </FlexBox>
-        <Box
+        <Image 
           width="100%"
           height={downMd ? "230px" : "auto"}
-          style={{
-            backgroundImage: `url('profile.png')`,
-            backgroundSize: 'contain',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
+          image="url('profile.png')"
         />
         <Divider
           orientation={downMd ? "horizontal" : "vertical"}
