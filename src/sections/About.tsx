@@ -1,4 +1,4 @@
-import { Box, Divider, Typography, Theme, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Divider, Typography, Theme, useMediaQuery, useTheme, Link } from "@mui/material";
 import { Container, Border, FlexBox, Image } from "../components";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -21,9 +21,9 @@ export const About = () => {
           gap={downMd ? theme.spacing(1) : theme.spacing(2)}
         >
           <Typography variant="h2" color="secondary.main">I’M MANUEL GOSENDE</Typography>
-          <Typography variant="h3" color="primary.main">GRAPHIC DESIGNER & FRONTEND DEVELOPER</Typography>
-          <Typography variant="body1" color="primary.light">I'm based in Tandil, Argentina, passionate about using technology to create software that combines functionality and UX/UI to improve everyday life and transform the way people interact with the virtual world.
-          I have a solid knowledge of HTML, CSS, JavaScript, TypeScript and React. Looking at design, I can transform it into responsive web pages with meticulous attention to detail. I am always eager to stay up-to-date with the latest web development tools and technologies.
+          <Typography variant="h3" color="primary.main">FRONTEND DEVELOPER & GRAPHIC DESIGNER</Typography>
+          <Typography variant="body1" color="primary.light">I'm based in Tandil, Argentina, passionate about using technology to create software that combines functionality and UX/UI to improve everyday life and transform the way people interact with the virtual world.<br /><br />
+          I have a solid knowledge of HTML, CSS, JavaScript, TypeScript and React. Looking at design, I can transform it into responsive web pages with meticulous attention to detail. I am always eager to stay up-to-date with the latest web development tools and technologies.<br /><br />
           Currently, I am exploring React Native to apply my skills to app development.</Typography>
         </FlexBox>
         <Image 
@@ -47,9 +47,9 @@ export const About = () => {
           color="primary.light"
           padding={theme.spacing(1)}
         >
-          <GitHubIcon />
-          <LinkedInIcon />
-          <InstagramIcon />
+          <Link color="primary.light" href="https://github.com/ManuelGosende"><GitHubIcon /></Link>
+          <Link color="primary.light" href="https://www.linkedin.com/in/manuel-gosende/"><LinkedInIcon /></Link>
+          <Link color="primary.light" href="https://www.instagram.com/manuel.gosende/"><InstagramIcon /></Link>
         </FlexBox>
       </Border>
       <Box

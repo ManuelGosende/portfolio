@@ -5,7 +5,7 @@ interface JobProps {
   company: string;
   time: string;
   position: string;
-  description: string;
+  description: React.ReactNode;
   icon: string;
 }
 

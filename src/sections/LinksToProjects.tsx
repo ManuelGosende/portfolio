@@ -1,6 +1,5 @@
 import { Typography, Theme, useMediaQuery, useTheme } from "@mui/material";
 import { Border, Container, FlexBox, LinkToProject } from "../components";
-import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 export const LinksToProjects = () => {
 

@@ -15,7 +15,7 @@ export const App = () => {
         <Experience />
         <Skills />
         <LinksToProjects />
-{/*         <Contact /> */}
+        <Contact />
       </FlexBox>
     </ThemeProvider>
   );
