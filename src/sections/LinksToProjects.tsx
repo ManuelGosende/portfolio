@@ -8,6 +8,7 @@ export const LinksToProjects = () => {
 
   return (
     <Container
+      id="linkstoprojects"
       backgroundImage="url('background-3.jpg')"
     >
       <Typography variant="h1" color="primary.light">03 LINKS TO PROJECTS</Typography>

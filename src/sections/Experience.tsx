@@ -5,6 +5,7 @@ import { theme } from "../theme/theme";
 export const Experience = () => {
   return (
     <Container
+      id="experience"
       backgroundImage="url('background-1.1.jpg')"
     >
       <Typography variant="h1" color="primary.light">01 EXPERIENCE</Typography>

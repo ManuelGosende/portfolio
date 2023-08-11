@@ -6,7 +6,7 @@ import { FlexBox, NavBar } from './components';
 export const App = () => {
   return (
     <ThemeProvider theme={theme}>
-{/*       <NavBar /> */}
+      <NavBar />
       <FlexBox
         flexDirection="column"
         alignItems="center"

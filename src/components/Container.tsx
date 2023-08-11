@@ -1,6 +1,7 @@
 import { Box, styled } from "@mui/material";
 
 interface ContainerProps {
+  id: string;
   backgroundImage: string;
   children: React.ReactNode;
 }
@@ -13,9 +14,10 @@ const BoxStyled = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const Container: React.FC<ContainerProps> = ({backgroundImage, children }) => {
+export const Container: React.FC<ContainerProps> = ({ id, backgroundImage, children }) => {
   return (
     <BoxStyled
+      id={id}
       style={{
         backgroundImage: backgroundImage,
         backgroundSize: 'cover',

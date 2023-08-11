@@ -8,6 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export const Contact = () => {
   return (
     <Container
+      id="contact"
       backgroundImage="url('background-4.jpg')"
     >
       <Typography variant="h1" color="primary.light">CONTACT</Typography>

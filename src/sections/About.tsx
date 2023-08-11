@@ -11,9 +11,14 @@ export const About = () => {
 
   return (
     <Container
+      id="about"
       backgroundImage="url('background-1.jpg')"
     >
-      <Border>
+      <Border
+        style={{
+          marginTop: theme.spacing(4)
+        }}
+      >
         <FlexBox
           width="100%"
           flexDirection="column"

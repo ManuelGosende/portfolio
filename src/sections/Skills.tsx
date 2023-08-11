@@ -1,14 +1,12 @@
-import { Typography, Theme, useMediaQuery, useTheme } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Border, Container, FlexBox, Profession } from "../components";
 import { SkillsProgramming, SkillsDesign } from "../utils";
+import { theme } from "../theme/theme";
 
 export const Skills = () => {
-
-  const theme = useTheme();
-  const downMd = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
-
   return (
     <Container
+      id="skills"
       backgroundImage="url('background-2.jpg')"
     >
       <Typography variant="h1" color="primary.light" textAlign="right">02 SKILLS</Typography>
