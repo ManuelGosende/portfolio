@@ -1,32 +1,38 @@
-import { Typography } from "@mui/material";
+import { Typography, Link } from "@mui/material";
 import { theme } from "../theme/theme";
 import { FlexBox } from "./FlexBox";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-import React from "react";
 
 interface LinkToProjectProps {
   text: string;
+  link: string;
 }
 
-export const LinkToProject: React.FC<LinkToProjectProps> = ({ text }) => {
+export const LinkToProject: React.FC<LinkToProjectProps> = ({ text, link }) => {
   return (
-    <FlexBox
-      width="fit-content"
-      alignItems="center"
-      gap={theme.spacing(1)}
-      padding="2px"
-      sx={{
-        backgroundColor: "secondary.main"
-      }}
-    >
-      <Typography variant="body1" color="primary.light">
-        { text }
-      </Typography>
-      <ArrowOutwardIcon
-        sx={{
-          color: "primary.light"
-        }}
-      />
-    </FlexBox>
+    <Link target="_blank" underline="none" href={link}>
+      <FlexBox
+        width="fit-content"
+        gap={theme.spacing(1)}
+        position="relative"
+        overflow="hidden"
+        className="containerProject"
+      >
+        <FlexBox
+          alignItems="center"
+          className="arrowProject"
+        >
+          <Typography paddingLeft="4px" variant="body1" color="primary.light" zIndex={ 300 }>
+            { text }
+          </Typography>
+          <ArrowOutwardIcon
+            sx={{
+              color: "primary.light",
+              zIndex: 300
+            }}
+          />
+        </FlexBox>
+      </FlexBox>
+    </Link>
   );
 }

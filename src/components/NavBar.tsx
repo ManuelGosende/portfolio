@@ -42,6 +42,7 @@ export const NavBar = () => {
       display={downMd ? "block" : "flex"}
       justifyContent={downMd ? "start" : "end"}
       position="fixed"
+      zIndex={ 900 }
       sx={{
         background: downMd ? theme.palette.primary.dark : 'linear-gradient(180deg, rgba(30,30,30,1) 43%, rgba(30,30,30,0) 100%)',
         marginLeft: downMd ? '' : '-40px',

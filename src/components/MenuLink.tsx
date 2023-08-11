@@ -26,11 +26,11 @@ export const MenuLink: React.FC<MenuLinkProps> = ({ to, children }) => {
     >
       <FlexBox
         alignItems="center"
+        position="relative"
+        overflow="hidden"
         sx={{ 
           color: "primary.light",
           fontSize: "0.875rem",
-          position: 'relative',
-          overflow: 'hidden',
         }}
         gap={1}
         className='containerLink'
@@ -38,6 +38,7 @@ export const MenuLink: React.FC<MenuLinkProps> = ({ to, children }) => {
         { children }
           <FlexBox
             className='containerArrow'
+            borderLeft="1px solid #07AA79"
           >
             <ArrowOutwardIcon
               sx={{ zIndex: 300 }}

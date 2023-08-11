@@ -52,9 +52,9 @@ export const About = () => {
           color="primary.light"
           padding={theme.spacing(1)}
         >
-          <Link color="primary.light" href="https://github.com/ManuelGosende"><GitHubIcon /></Link>
-          <Link color="primary.light" href="https://www.linkedin.com/in/manuel-gosende/"><LinkedInIcon /></Link>
-          <Link color="primary.light" href="https://www.instagram.com/manuel.gosende/"><InstagramIcon /></Link>
+          <Link target="_blank" underline="none" color="primary.light" href="https://github.com/ManuelGosende"><GitHubIcon /></Link>
+          <Link target="_blank" underline="none" color="primary.light" href="https://www.linkedin.com/in/manuel-gosende/"><LinkedInIcon /></Link>
+          <Link target="_blank" underline="none" color="primary.light" href="https://www.instagram.com/manuel.gosende/"><InstagramIcon /></Link>
         </FlexBox>
       </Border>
       <Box
