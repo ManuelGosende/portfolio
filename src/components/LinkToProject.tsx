@@ -12,6 +12,7 @@ export const LinkToProject: React.FC<LinkToProjectProps> = ({ text }) => {
   return (
     <FlexBox
       width="fit-content"
+      alignItems="center"
       gap={theme.spacing(1)}
       padding="2px"
       sx={{
