@@ -31,3 +31,38 @@ body {
 .containerLink:hover .containerArrow::before {
   width: 100%;
 }
+
+/* Menu Animation */
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.animationMenu {
+  flex-direction: column;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.menuOpen {
+  animation-name: slideIn;
+}
+
+.menuClosed {
+  animation-name: slideOut;
+}

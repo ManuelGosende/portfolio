@@ -26,7 +26,11 @@ const MenuLinkList = () => {
 
 export const NavBar = () => {
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setOpen(prevOpen => !prevOpen);
+  };
 
   const theme = useTheme();
   const downMd = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
@@ -54,16 +58,18 @@ export const NavBar = () => {
               sx={{
                 color: "primary.light"
               }}
-              onClick={() => setOpen(false)}
+              onClick={ toggleMenu }
             />
-            <MenuLinkList />
+            <FlexBox className={`animationMenu ${open ? 'menuOpen' : 'menuClosed'}`}>
+              <MenuLinkList />
+            </FlexBox>
           </>
           :
           <MenuIcon 
             sx={{
               color: "primary.light"
             }}
-            onClick={() => setOpen(true)}
+            onClick={ toggleMenu }
           />
         }
       </>
