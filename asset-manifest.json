@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.874d1614.css",
-    "main.js": "/portfolio/static/js/main.76621072.js",
+    "main.js": "/portfolio/static/js/main.493d95c9.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Poppins-Regular.ttf": "/portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/MonumentExtended-Regular.otf": "/portfolio/static/media/MonumentExtended-Regular.db74f7a563ec017311bc.otf",
     "static/media/MonumentExtended-Ultrabold.otf": "/portfolio/static/media/MonumentExtended-Ultrabold.9db16afed1996befff6b.otf",
     "index.html": "/portfolio/index.html",
     "main.874d1614.css.map": "/portfolio/static/css/main.874d1614.css.map",
-    "main.76621072.js.map": "/portfolio/static/js/main.76621072.js.map",
+    "main.493d95c9.js.map": "/portfolio/static/js/main.493d95c9.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.874d1614.css",
-    "static/js/main.76621072.js"
+    "static/js/main.493d95c9.js"
   ]
 }
