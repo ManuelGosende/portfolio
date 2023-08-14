@@ -46,7 +46,7 @@ export const LinksToProjects = () => {
           />
           <LinkToProject
             text="GITHUB"
-            link="https://github.com/ManuelGosende/portfolio"
+            link="https://github.com/ManuelGosende/portfolio/tree/master"
           />
         </FlexBox>
       </Border>

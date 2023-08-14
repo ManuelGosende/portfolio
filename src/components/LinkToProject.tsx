@@ -10,14 +10,14 @@ interface LinkToProjectProps {
 
 export const LinkToProject: React.FC<LinkToProjectProps> = ({ text, link }) => {
   return (
-    <Link target="_blank" underline="none" href={link}>
-      <FlexBox
-        width="fit-content"
-        gap={theme.spacing(1)}
-        position="relative"
-        overflow="hidden"
-        className="containerProject"
-      >
+    <FlexBox
+      width="fit-content"
+      gap={theme.spacing(1)}
+      position="relative"
+      overflow="hidden"
+      className="containerProject"
+    >
+      <Link target="_blank" underline="none" href={link}>
         <FlexBox
           alignItems="center"
           className="arrowProject"
@@ -32,7 +32,7 @@ export const LinkToProject: React.FC<LinkToProjectProps> = ({ text, link }) => {
             }}
           />
         </FlexBox>
-      </FlexBox>
-    </Link>
+      </Link>
+    </FlexBox>
   );
 }
