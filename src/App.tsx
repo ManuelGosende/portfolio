@@ -4,6 +4,7 @@ import { About, Contact, Experience, LinksToProjects, Skills } from './sections'
 import { FlexBox, NavBar } from './components';
 
 export const App = () => {
+  
   return (
     <ThemeProvider theme={theme}>
       <NavBar />
