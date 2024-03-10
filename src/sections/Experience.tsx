@@ -17,8 +17,20 @@ export const Experience = () => {
           gap={theme.spacing(4)}
         >
           <Job 
+            company="ANDROMEDA LATAM"
+            time="SEPTEMBER 2023 - PRESENT"
+            position="FRONTEND DEVELOPER"
+            description={
+              <>
+                I work as a Frontend Developer on a company-owned product. The technologies I use are React, Typescript, Next, and Material UI for styling the system.<br /><br />
+                I work alongside a self-managed team composed of developers, architects, and designers. I have created reusable components, custom hooks, and optimized variable contexts for each functionality.
+              </>
+            }
+            icon="url('code-icon.png')"
+          />
+          <Job 
             company="QWAVEE"
-            time="JANUARY 2022 - PRESENT"
+            time="JANUARY 2022 - AUGUST 2023"
             position="FRONTEND DEVELOPER"
             description={
               <>

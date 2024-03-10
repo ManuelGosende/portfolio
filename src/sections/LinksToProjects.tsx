@@ -28,11 +28,15 @@ export const LinksToProjects = () => {
           <LinkToProject
             text="ENZO BIBBÓ | WEB"
             link="https://enzobibbo.com/"
-            />
+          />
           <LinkToProject
             text="LANIN | WEB DESIGN"
             link="https://www.figma.com/file/sd8xTP72KHOO0FagtfqAKU/Lanin?type=design&node-id=0-1&mode=design"
-            />
+          />
+          <LinkToProject
+            text="LANIN | WEB"
+            link="https://www.laninstudio.xyz/"
+          />
           <LinkToProject
             text="ILLUSTRATION"
             link="https://www.crehana.com/proyecto/manuelgosende/by-order-of-the-peaky-blinders/"
