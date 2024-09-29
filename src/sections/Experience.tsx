@@ -22,7 +22,7 @@ export const Experience = () => {
             position="FRONTEND DEVELOPER"
             description={
               <>
-                I work as a Frontend Developer on a company-owned product. The technologies I use are React, Typescript, Next, and Material UI for styling the system.<br /><br />
+                I work as a Frontend Developer on a company-owned product. The technologies I use are React, Typescript, Next, and Tailwind for styling the system.<br /><br />
                 I work alongside a self-managed team composed of developers, architects, and designers. I have created reusable components, custom hooks, and optimized variable contexts for each functionality.
               </>
             }

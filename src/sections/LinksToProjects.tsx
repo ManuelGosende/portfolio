@@ -26,10 +26,6 @@ export const LinksToProjects = () => {
             link="https://drive.google.com/drive/folders/1uQD3a5dNhxqA0tOFKmJiW3435UaQ_IrP"
           />
           <LinkToProject
-            text="ENZO BIBBÓ | WEB"
-            link="https://enzobibbo.com/"
-          />
-          <LinkToProject
             text="LANIN | WEB DESIGN"
             link="https://www.figma.com/file/sd8xTP72KHOO0FagtfqAKU/Lanin?type=design&node-id=0-1&mode=design"
           />

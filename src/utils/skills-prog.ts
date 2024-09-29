@@ -9,7 +9,7 @@ export const SkillsProgramming = [
   "_HTML",
   "_SCSS",
   "_Figma",
-  "_Material UI",
+  "_Material UI | Tailwind",
   "_GraphQL",
   "_Git | GitHub",
   "_Agile methodologies",
