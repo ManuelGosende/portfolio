@@ -22,16 +22,28 @@ export const LinksToProjects = () => {
             Here are some of the projects I have worked on during my professional career. I invite you to navigate the links to see the final results.
           </Typography>
           <LinkToProject
+            text="BUENO LAGARTO | PERSONAL CLOTHING BRAND"
+            link="https://buenolagarto.com/"
+          />
+          <LinkToProject
             text="DESIGN PROJECTS"
             link="https://drive.google.com/drive/folders/1uQD3a5dNhxqA0tOFKmJiW3435UaQ_IrP"
+          />
+          <LinkToProject
+            text="ARIAS ARGÜELLES | IDENTITY & RRSS"
+            link="https://www.instagram.com/ariasarguelles/"
           />
           <LinkToProject
             text="LANIN | WEB DESIGN"
             link="https://www.figma.com/file/sd8xTP72KHOO0FagtfqAKU/Lanin?type=design&node-id=0-1&mode=design"
           />
           <LinkToProject
-            text="LANIN | WEB"
-            link="https://www.laninstudio.xyz/"
+            text="SELLER MANAGER | FRONTEND"
+            link="https://seller-manager.com/"
+          />
+          <LinkToProject
+            text="MEAT RANK | FRONTEND"
+            link="https://meat-rank.com/"
           />
           <LinkToProject
             text="ILLUSTRATION"
