@@ -23,7 +23,7 @@ export const LinksToProjects = () => {
           </Typography>
           <LinkToProject
             text="BUENO LAGARTO | PERSONAL CLOTHING BRAND"
-            link="https://buenolagarto.com/"
+            link="https://www.instagram.com/buenolagarto/"
           />
           <LinkToProject
             text="DESIGN PROJECTS"

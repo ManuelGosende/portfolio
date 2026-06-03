@@ -1,5 +1,4 @@
 import { styled } from "@mui/material";
-import { theme } from "../theme/theme";
 import { FlexBox } from "./";
 
 interface BorderProps {

@@ -31,11 +31,16 @@ export const About = () => {
           I have a solid knowledge of HTML, CSS, JavaScript, TypeScript and React. Looking at design, I can transform it into responsive web pages with meticulous attention to detail. I am always eager to stay up-to-date with the latest web development tools and technologies.<br /><br />
           Currently, I am exploring React Native to apply my skills to app development.</Typography>
         </FlexBox>
-        <Image 
+        <FlexBox
           width="100%"
-          height={downMd ? "230px" : "auto"}
-          image="url('profile.png')"
-        />
+          marginBottom={downMd ? '-20px' : '-40px'}
+        >
+          <Image 
+            width="100%"
+            height={downMd ? "230px" : "auto"}
+            image="url('profile.png')"
+          />
+        </FlexBox>
         <Divider
           orientation={downMd ? "horizontal" : "vertical"}
           variant="middle"
