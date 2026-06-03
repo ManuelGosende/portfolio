@@ -9,7 +9,7 @@ export default {
     title: 'SOY MANUEL GOSENDE',
     subtitle: 'FRONTEND DEVELOPER & DISEÑADOR GRÁFICO',
     description1: 'Vivo en Mar del Plata, Argentina, y me apasiona usar la tecnología para crear software que combine funcionalidad y UX/UI para mejorar la vida cotidiana y transformar la forma en que las personas interactúan con el mundo virtual.',
-    description2: 'Tengo un sólido conocimiento de HTML, CSS, JavaScript, TypeScript y Next JS. Gracias a mi experiencia en diseño, puedo desarrollar páginas web interactivas con una meticulosa atención al detalle. Siempre estoy actualizado con las últimas herramientas y tecnologías de desarrollo web.',
+    description2: 'Tengo un sólido conocimiento de HTML, CSS, JavaScript, TypeScript y Next JS para programar, mientras que mis skills en diseño son Illustrator, Photoshop, After Effects, Premiere y Lightroom. Gracias a mi experiencia en diseño, puedo desarrollar páginas web interactivas con una meticulosa atención al detalle. Siempre estoy actualizado con las últimas herramientas y tecnologías de desarrollo web.',
     description3: 'Actualmente, estoy explorando React Native para aplicar mis habilidades al desarrollo de aplicaciones.',
   },
   experience: {
