@@ -6,3 +6,4 @@ export { Job } from './Job';
 export { Image } from './Image';
 export { Profession } from './Profession';
 export { LinkToProject } from './LinkToProject';
+export { LanguageSwitcher } from './LanguageSwitcher';

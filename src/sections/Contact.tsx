@@ -4,14 +4,16 @@ import { theme } from "../theme/theme";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t } = useTranslation();
   return (
     <Container
       id="contact"
       backgroundImage="url('background-4.jpg')"
     >
-      <Typography variant="h1" color="primary.light">CONTACT</Typography>
+      <Typography variant="h1" color="primary.light">{t('contact.title')}</Typography>
       <Border>
         <FlexBox
           width="100%"
@@ -20,8 +22,8 @@ export const Contact = () => {
           gap={theme.spacing(2)}
         >
           <Typography variant="body1" color="primary.main" textAlign="center">
-            Thank you very much for visiting my portfolio!<br />
-            You can reach out to me <Link color="primary.light" href="mailto:mgosende5@gmail.com">here.</Link>
+            <span dangerouslySetInnerHTML={{ __html: t('contact.description') }} />
+            <Link color="primary.light" href="mailto:mgosende5@gmail.com">{t('contact.link')}</Link>
           </Typography>
           <FlexBox
             justifyContent="center"
@@ -45,7 +47,7 @@ export const Contact = () => {
           padding: theme.spacing(2)
         }}
       >
-        @DESIGN & @PROGRAMMING<br /> MANUEL GOSENDE
+        {t('contact.copyright')}<br />{t('contact.name')}
       </Typography>
     </Container>
   );

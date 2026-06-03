@@ -3,9 +3,10 @@ import { Container, Border, FlexBox, Image } from "../components";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
-
+  const { t } = useTranslation();
   const theme = useTheme();
   const downMd = useMediaQuery((theme: Theme) => theme.breakpoints.down("md"));
 
@@ -25,11 +26,13 @@ export const About = () => {
           justifyContent="center"
           gap={downMd ? theme.spacing(1) : theme.spacing(2)}
         >
-          <Typography variant="h2" color="secondary.main">I’M MANUEL GOSENDE</Typography>
-          <Typography variant="h3" color="primary.main">FRONTEND DEVELOPER & GRAPHIC DESIGNER</Typography>
-          <Typography variant="body1" color="primary.light">I'm based in Mar del Plata, Argentina, passionate about using technology to create software that combines functionality and UX/UI to improve everyday life and transform the way people interact with the virtual world.<br /><br />
-          I have a solid knowledge of HTML, CSS, JavaScript, TypeScript and React. Looking at design, I can transform it into responsive web pages with meticulous attention to detail. I am always eager to stay up-to-date with the latest web development tools and technologies.<br /><br />
-          Currently, I am exploring React Native to apply my skills to app development.</Typography>
+          <Typography variant="h2" color="secondary.main">{t('about.title')}</Typography>
+          <Typography variant="h3" color="primary.main">{t('about.subtitle')}</Typography>
+          <Typography variant="body1" color="primary.light">
+            {t('about.description1')}<br /><br />
+            {t('about.description2')}<br /><br />
+            {t('about.description3')}
+          </Typography>
         </FlexBox>
         <FlexBox
           width="100%"

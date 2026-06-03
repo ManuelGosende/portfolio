@@ -4,21 +4,24 @@ import { FlexBox } from "./FlexBox";
 import { MenuLink } from "./MenuLink";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 const MenuLinkList = () => {
+  const { t } = useTranslation();
   return (
     <>
       <MenuLink to="experience">
-        EXPERIENCE
+        {t('navbar.experience')}
       </MenuLink>
       <MenuLink to="skills">
-        SKILLS
+        {t('navbar.skills')}
       </MenuLink>
       <MenuLink to="linkstoprojects">
-        LINKS TO PROJECTS
+        {t('navbar.linkstoprojects')}
       </MenuLink>
       <MenuLink to="contact">
-        CONTACT
+        {t('navbar.contact')}
       </MenuLink>
     </>
   );
@@ -63,6 +66,7 @@ export const NavBar = () => {
             />
             <FlexBox className={`animationMenu ${open ? 'menuOpen' : 'menuClosed'}`}>
               <MenuLinkList />
+              <LanguageSwitcher />
             </FlexBox>
           </>
           :
@@ -77,6 +81,7 @@ export const NavBar = () => {
       :
       <>
         <MenuLinkList />
+        <LanguageSwitcher />
       </>
       }
     </FlexBox>
