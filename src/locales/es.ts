@@ -41,16 +41,46 @@ export default {
   linkstoprojects: {
     title: '03 PROYECTOS',
     description: 'A continuación dejo algunos de los proyectos en los que he trabajado durante mi carrera profesional. Te invito a navegar los enlaces para ver los resultados.',
-    project1: 'BUENO LAGARTO | MARCA DE ROPA PERSONAL',
-    project2: 'PROYECTOS DE DISEÑO',
-    project3: 'ARIAS ARGÜELLES | IDENTIDAD Y RRSS',
-    project4: 'LANIN | DISEÑO WEB',
-    project5: 'SELLER MANAGER | FRONTEND',
-    project6: 'MEAT RANK | FRONTEND',
-    project7: 'ILUSTRACIÓN',
+    project1: 'PROYECTOS',
+    project2: 'LANIN | DISEÑO WEB',
+    project3: 'ILUSTRACIÓN',
     description2: 'Este sitio web fue diseñado y desarrollado por mí utilizando algunas de las herramientas mencionadas anteriormente. A continuación encontrarás los enlaces para ver el mockup de Figma y el código en GitHub.',
     project8: 'FIGMA',
     project9: 'GITHUB',
+  },
+  projects: {
+    viramundo: {
+      shortDescription: "Diseño de identidad visual y sitio web institucional para agencia de viajes.",
+      description: "Desarrollo integral de marca y diseño de sitio web institucional. El proyecto enfocó su comunicación en el turismo vivencial y explorador, conectando con un público joven mediante una gráfica dinámica y un sitio funcional orientado a la experiencia de viaje."
+    },
+    full_fisio: {
+      shortDescription: "Branding e identidad visual para equipo de kinesiólogos en Tandil.",
+      description: "Diseño de identidad de marca integral para un equipo de kinesiólogos. El concepto gráfico comunica rehabilitación activa, prevención y bienestar integral, transmitiendo un enfoque profesional orientado al cuidado de la salud física."
+    },
+    el_codigo_del_placer: {
+      shortDescription: "Diseño de marca orientado a la autenticidad, libertad y empoderamiento femenino.",
+      description: "Creación de identidad visual para un espacio de expresión y autoconocimiento. La gráfica refleja feminidad, libertad e independencia, alejándose de estereotipos tradicionales mediante una estética moderna, auténtica y resolutiva."
+    },
+    arias_arguelles: {
+      shortDescription: "Identidad gráfica para empresa de soluciones tecnológicas y fumigación con drones en el agro.",
+      description: "Desarrollo de marca y presencia en redes para un servicio agropecuario con drones. La identidad utiliza una tipografía fuerte y elementos dinámicos que transmiten precisión, innovación y acompañamiento constante al productor en el campo."
+    },
+    bueno_lagarto: {
+      shortDescription: "Marca de indumentaria inspirada en la naturaleza, los viajes y la vida al aire libre.",
+      description: "Proyecto personal y marca de ropa enfocada en el estilo de vida aventurero, la amistad y el contacto con el entorno natural. Desarrollo integral desde la gestión del producto hasta el diseño gráfico de prendas e imagen visual."
+    },
+    krenergy: {
+      shortDescription: "Diseño de marca enfocado en soluciones de energía renovable y sustentabilidad.",
+      description: "Creación de logotipo e identidad visual para marca de energías limpias. El diseño utiliza formas geométricas y una paleta cromática que comunica innovación, sustentabilidad y eficiencia energética."
+    },
+    lupino: {
+      shortDescription: "Diseño de logotipo con estética vintage para discográfica y distribuidora musical.",
+      description: "Desarrollo de marca con impronta retro e inspiración vintage para un proyecto orientado a la difusión de vinilos y música analógica, combinando nostalgia y carácter en su gráfica."
+    },
+    idear: {
+      shortDescription: "Identidad de marca para agencia de marketing digital y comunicación.",
+      description: "Diseño de logo e identidad corporativa que fusiona conceptos de tecnología, marketing estratégico y diseño visual, logrando una imagen moderna, versátil y orientada a entornos digitales."
+    },
   },
   contact: {
     title: 'CONTACTO',

@@ -81,3 +81,20 @@ body {
 .containerProject:hover .arrowProject::before {
   width: 0;
 }
+
+/* Animation card */
+
+.project-card-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-card-image div {
+  display: block;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+a:hover .project-card-image div {
+  transform: scale(1.05);
+}

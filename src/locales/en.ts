@@ -41,16 +41,46 @@ export default {
   linkstoprojects: {
     title: '03 PROJECTS',
     description: 'Here are some of the projects I have worked on during my professional career. I invite you to navigate the links to see the final results.',
-    project1: 'BUENO LAGARTO | PERSONAL CLOTHING BRAND',
-    project2: 'DESIGN PROJECTS',
-    project3: 'ARIAS ARGÜELLES | IDENTITY & RRSS',
-    project4: 'LANIN | WEB DESIGN',
-    project5: 'SELLER MANAGER | FRONTEND',
-    project6: 'MEAT RANK | FRONTEND',
-    project7: 'ILLUSTRATION',
+    project1: 'PROJECTS',
+    project2: 'LANIN | WEB DESIGN',
+    project3: 'ILLUSTRATION',
     description2: 'This website was designed and developed by me using some of the tools mentioned above. Below you will find the links to view the Figma mockup and the code on GitHub.',
     project8: 'FIGMA',
     project9: 'GITHUB',
+  },
+  projects: {
+    viramundo: {
+      shortDescription: "Visual identity and institutional website design for a travel agency.",
+      description: "Comprehensive brand development and institutional website design. The project focused its communication on experiential and exploratory tourism, connecting with a young audience through dynamic graphics and a functional site."
+    },
+    full_fisio: {
+      shortDescription: "Branding and visual identity for a physical therapy team in Tandil.",
+      description: "Complete brand identity design for a physical therapy team. The graphic concept communicates active rehabilitation, prevention, and overall well-being, conveying a professional approach to physical health care."
+    },
+    el_codigo_del_placer: {
+      shortDescription: "Brand design focused on authenticity, freedom, and female empowerment.",
+      description: "Visual identity creation for a space dedicated to expression and self-knowledge. The graphics reflect femininity, freedom, and independence, steering away from traditional stereotypes through a modern and authentic aesthetic."
+    },
+    arias_arguelles: {
+      shortDescription: "Graphic identity for an agricultural tech and drone spraying company.",
+      description: "Brand development and social media management for drone-based agricultural services. The identity features strong typography and dynamic elements that convey precision, innovation, and constant support for farmers."
+    },
+    bueno_lagarto: {
+      shortDescription: "Apparel brand inspired by nature, travel, and outdoor lifestyle.",
+      description: "Personal project and clothing brand centered around an adventurous lifestyle, friendship, and connection with nature. Comprehensive execution from product management to graphic and visual design."
+    },
+    krenergy: {
+      shortDescription: "Brand design focused on renewable energy solutions and sustainability.",
+      description: "Logo design and visual identity for a clean energy brand. The design uses geometric shapes and a color palette that communicates innovation, sustainability, and energy efficiency."
+    },
+    lupino: {
+      shortDescription: "Vintage-styled logo design for a record label and music distributor.",
+      description: "Brand development with a retro and vintage-inspired aesthetic for a project focused on vinyl records and analog music, combining nostalgia and character in its branding."
+    },
+    idear: {
+      shortDescription: "Brand identity for a digital marketing and communication agency.",
+      description: "Logo and corporate identity design merging concepts of technology, strategic marketing, and visual design, achieving a modern, versatile image tailored for digital environments."
+    },
   },
   contact: {
     title: 'CONTACT',

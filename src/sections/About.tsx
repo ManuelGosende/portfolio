@@ -2,7 +2,6 @@ import { Box, Divider, Typography, Theme, useMediaQuery, useTheme, Link } from "
 import { Container, Border, FlexBox, Image } from "../components";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import { useTranslation } from "react-i18next";
 
 export const About = () => {
@@ -62,7 +61,6 @@ export const About = () => {
         >
           <Link target="_blank" underline="none" color="primary.light" href="https://github.com/ManuelGosende"><GitHubIcon /></Link>
           <Link target="_blank" underline="none" color="primary.light" href="https://www.linkedin.com/in/manuel-gosende/"><LinkedInIcon /></Link>
-          <Link target="_blank" underline="none" color="primary.light" href="https://www.instagram.com/manuel.gosende/"><InstagramIcon /></Link>
         </FlexBox>
       </Border>
       <Box

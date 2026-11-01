@@ -1,7 +1,15 @@
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './theme/theme';
-import { About, Contact, Experience, LinksToProjects, Skills } from './sections';
-import { FlexBox, NavBar } from './components';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Projects } from './pages/Projects';
+import { ProjectDetail } from './pages/ProjectDetail';
+import { NavBar } from './components';
+
+const basename =
+window.location.hostname === "manuelgosende.github.io"
+  ? "/portfolio"
+  : "";
 
 export const App = () => {
   
@@ -12,17 +20,14 @@ export const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <NavBar />
-      <FlexBox
-        flexDirection="column"
-        alignItems="center"
-      >
-        <About />
-        <Experience />
-        <Skills />
-        <LinksToProjects />
-        <Contact />
-      </FlexBox>
+      <BrowserRouter basename={basename}>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:slug" element={<ProjectDetail />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

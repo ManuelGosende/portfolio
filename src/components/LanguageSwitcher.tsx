@@ -1,41 +1,82 @@
-import { useTranslation } from 'react-i18next';
-import { Box, Switch, FormControlLabel } from '@mui/material';
+import { useTranslation } from "react-i18next";
+import { Box, ButtonBase, Tooltip } from "@mui/material";
 
 export function LanguageSwitcher() {
   const { i18n } = useTranslation();
 
-  const handleLanguageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    i18n.changeLanguage(event.target.checked ? 'en' : 'es');
+  const isEnglish = i18n.language.startsWith("en");
+
+  const handleLanguageChange = (language: "es" | "en") => {
+    i18n.changeLanguage(language);
   };
 
+  const languages = [
+    { code: "es", label: "Español", flag: "ar.png" },
+    { code: "en", label: "English", flag: "gb.png" },
+  ] as const;
+
   return (
-    <Box>
-      <FormControlLabel
-        control={
-          <Switch
-            checked={i18n.language === 'en'}
-            onChange={handleLanguageChange}
-            color="primary"
-            name="languageSwitch"
-            inputProps={{ 'aria-label': 'language switch' }}
-          />
-        }
-        labelPlacement="start"
-        label={i18n.language === 'en' ? 'EN' : 'ES'}
-        sx={{ 
-          marginLeft: 0,
-          marginRight: 0,
-          marginTop: '-5px',
-          color: 'primary.light',
-          '& .MuiSwitch-track': {
-            backgroundColor: 'secondary.main',
-          },
-          '& .MuiSwitch-thumb': {
-            backgroundColor: 'primary.main',
-          },
-        }}
-      />
+    <Box
+      display="inline-flex"
+      alignItems="center"
+      justifyContent="center"
+      gap={0.5}
+      padding={0.5}
+      width="fit-content"
+      flex="0 0 auto"
+      sx={{
+        backgroundColor: "rgba(255,255,255,0.08)",
+        border: "1px solid rgba(255,255,255,0.15)",
+        borderRadius: 10,
+        whiteSpace: "nowrap",
+      }}
+    >
+      {languages.map(({ code, label, flag }) => {
+        const active =
+          code === "en" ? isEnglish : !isEnglish;
+
+        return (
+          <Tooltip key={code} title={label} arrow>
+            <ButtonBase
+              onClick={() => handleLanguageChange(code)}
+              aria-label={`Cambiar idioma a ${label}`}
+              aria-pressed={active}
+              sx={{
+                width: 30,
+                height: 30,
+                borderRadius: "50%",
+                padding: "3px",
+                border: active
+                  ? "2px solid"
+                  : "2px solid transparent",
+                borderColor: active
+                  ? "primary.light"
+                  : "transparent",
+                opacity: active ? 1 : 0.5,
+                transform: active ? "scale(1.05)" : "scale(0.9)",
+                transition: "all 0.25s ease",
+                "&:hover": {
+                  opacity: 1,
+                  transform: "scale(1.1)",
+                },
+              }}
+            >
+              <Box
+                component="img"
+                src={`${process.env.PUBLIC_URL}/${flag}`}
+                alt={label}
+                sx={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  borderRadius: "50%",
+                  display: "block",
+                }}
+              />
+            </ButtonBase>
+          </Tooltip>
+        );
+      })}
     </Box>
   );
 }
-
