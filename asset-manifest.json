@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.0bae5014.css",
-    "main.js": "/static/js/main.ab8d1682.js",
-    "static/js/453.0b72f93f.chunk.js": "/static/js/453.0b72f93f.chunk.js",
-    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/MonumentExtended-Regular.otf": "/static/media/MonumentExtended-Regular.db74f7a563ec017311bc.otf",
-    "static/media/MonumentExtended-Ultrabold.otf": "/static/media/MonumentExtended-Ultrabold.9db16afed1996befff6b.otf",
-    "index.html": "/index.html",
-    "main.0bae5014.css.map": "/static/css/main.0bae5014.css.map",
-    "main.ab8d1682.js.map": "/static/js/main.ab8d1682.js.map",
-    "453.0b72f93f.chunk.js.map": "/static/js/453.0b72f93f.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.da9e21de.css",
+    "main.js": "/portfolio/static/js/main.b318744b.js",
+    "static/js/453.0b72f93f.chunk.js": "/portfolio/static/js/453.0b72f93f.chunk.js",
+    "static/media/Poppins-Regular.ttf": "/portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/MonumentExtended-Regular.otf": "/portfolio/static/media/MonumentExtended-Regular.db74f7a563ec017311bc.otf",
+    "static/media/MonumentExtended-Ultrabold.otf": "/portfolio/static/media/MonumentExtended-Ultrabold.9db16afed1996befff6b.otf",
+    "index.html": "/portfolio/index.html",
+    "main.da9e21de.css.map": "/portfolio/static/css/main.da9e21de.css.map",
+    "main.b318744b.js.map": "/portfolio/static/js/main.b318744b.js.map",
+    "453.0b72f93f.chunk.js.map": "/portfolio/static/js/453.0b72f93f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bae5014.css",
-    "static/js/main.ab8d1682.js"
+    "static/css/main.da9e21de.css",
+    "static/js/main.b318744b.js"
   ]
 }
