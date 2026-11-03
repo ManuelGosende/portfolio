@@ -3,6 +3,7 @@ import { Container, Border, FlexBox, Image } from "../components";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useTranslation } from "react-i18next";
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 export const About = () => {
   const { t } = useTranslation();
@@ -12,7 +13,7 @@ export const About = () => {
   return (
     <Container
       id="about"
-      backgroundImage="url('background-1.jpg')"
+      backgroundImage={`url('${getPublicUrl('background-1.jpg')}')`}
     >
       <Border
         style={{
@@ -40,7 +41,7 @@ export const About = () => {
           <Image 
             width="100%"
             height={downMd ? "230px" : "auto"}
-            image="url('profile.png')"
+            image={`url('${getPublicUrl('profile.png')}')`}
           />
         </FlexBox>
         <Divider
@@ -67,7 +68,7 @@ export const About = () => {
         height="30px"
         paddingTop={theme.spacing(4)}
         style={{
-          backgroundImage: `url('barcode.png')`,
+          backgroundImage: `url('${getPublicUrl('barcode.png')}')`,
           backgroundPosition: 'bottom',
           backgroundRepeat: 'no-repeat'
         }}

@@ -1,6 +1,7 @@
 import { Divider, Grid, Typography, Theme, useMediaQuery, useTheme } from "@mui/material";
 import { FlexBox } from "./FlexBox";
 import { Image } from "./Image";
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 interface ProfessionProps {
   profession: string;
@@ -46,12 +47,12 @@ export const Profession: React.FC<ProfessionProps> = ({ profession, icon, skills
           <Image
             width="35px"
             height="35px"
-            image={ icon }
+            image={`url('${icon}')`}
           />
           <Image 
             width="35px"
             height="35px"
-            image="url('heart-icon.png')"
+            image={`url('${getPublicUrl('heart-icon.png')}')`}
           />
         </FlexBox>
       </FlexBox>

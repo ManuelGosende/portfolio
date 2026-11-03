@@ -4,6 +4,7 @@ import { Border, Container, FlexBox, Image } from "../components";
 import { Divider, Grid, Link, Typography, useMediaQuery, useTheme } from "@mui/material";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { useTranslation } from "react-i18next";
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 export const ProjectDetail = () => {
 
@@ -21,7 +22,7 @@ export const ProjectDetail = () => {
   return (
     <Container
       id="projectDetail"
-      backgroundImage={`url('${process.env.PUBLIC_URL}/background-2.jpg')`}
+      backgroundImage={`url('${getPublicUrl('background-2.jpg')}')`}
     >
       <Border
         style={{
@@ -90,7 +91,7 @@ export const ProjectDetail = () => {
                   width="100%"
                   height="100%"
                   aspectRatio="16 / 16"
-                  image={`url('${image}')`}
+                  image={`url('${getPublicUrl(image)}')`}
                 />
               </Grid>
             ))}

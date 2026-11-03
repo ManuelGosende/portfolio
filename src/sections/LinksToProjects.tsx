@@ -3,6 +3,7 @@ import { Border, Container, FlexBox, LinkToProject } from "../components";
 import { useTranslation } from "react-i18next";
 import { Link as RouterLink } from "react-router-dom";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 export const LinksToProjects = () => {
   const { t } = useTranslation();
@@ -12,7 +13,7 @@ export const LinksToProjects = () => {
   return (
     <Container
       id="linkstoprojects"
-      backgroundImage="url('background-3.jpg')"
+      backgroundImage={`url('${getPublicUrl('background-3.jpg')}')`}
     >
       <Typography variant="h1" color="primary.light">{t('linkstoprojects.title')}</Typography>
       <Border>

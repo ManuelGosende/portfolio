@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Box, ButtonBase, Tooltip } from "@mui/material";
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 export function LanguageSwitcher() {
   const { i18n } = useTranslation();
@@ -63,7 +64,7 @@ export function LanguageSwitcher() {
             >
               <Box
                 component="img"
-                src={`${process.env.PUBLIC_URL}/${flag}`}
+                src={getPublicUrl(flag)}
                 alt={label}
                 sx={{
                   width: "100%",

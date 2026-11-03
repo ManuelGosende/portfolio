@@ -2,13 +2,14 @@ import { Typography } from "@mui/material";
 import { Border, Container, FlexBox, Job } from "../components";
 import { theme } from "../theme/theme";
 import { useTranslation } from "react-i18next";
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 export const Experience = () => {
   const { t } = useTranslation();
   return (
     <Container
       id="experience"
-      backgroundImage="url('background-1.1.jpg')"
+      backgroundImage={`url('${getPublicUrl('background-1.1.jpg')}')`}
     >
       <Typography variant="h1" color="primary.light">{t('experience.title')}</Typography>
       <Border>
@@ -25,7 +26,7 @@ export const Experience = () => {
             description={
               <div dangerouslySetInnerHTML={{ __html: t('experience.job1.description') }} />
             }
-            icon="url('code-icon.png')"
+            icon={`url('${getPublicUrl('code-icon.png')}')`}
           />
           <Job 
             company={t('experience.job2.company')}
@@ -34,7 +35,7 @@ export const Experience = () => {
             description={
               <div dangerouslySetInnerHTML={{ __html: t('experience.job2.description') }} />
             }
-            icon="url('code-icon.png')"
+            icon={`url('${getPublicUrl('code-icon.png')}')`}
           />
           <Job
             company={t('experience.job3.company')}
@@ -43,7 +44,7 @@ export const Experience = () => {
             description={
               <div dangerouslySetInnerHTML={{ __html: t('experience.job3.description') }} />
             }
-            icon="url('design-icon.png')"
+            icon={`url('${getPublicUrl('code-icon.png')}')`}
           />
         </FlexBox>
       </Border>

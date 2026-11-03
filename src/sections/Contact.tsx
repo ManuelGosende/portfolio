@@ -4,13 +4,14 @@ import { theme } from "../theme/theme";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useTranslation } from "react-i18next";
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 export const Contact = () => {
   const { t } = useTranslation();
   return (
     <Container
       id="contact"
-      backgroundImage="url('background-4.jpg')"
+      backgroundImage={`url('${getPublicUrl('background-4.jpg')}')`}
     >
       <Typography variant="h1" color="primary.light">{t('contact.title')}</Typography>
       <Border>

@@ -6,11 +6,6 @@ import { Projects } from './pages/Projects';
 import { ProjectDetail } from './pages/ProjectDetail';
 import { NavBar } from './components';
 
-const basename =
-window.location.hostname === "manuelgosende.github.io"
-  ? "/portfolio"
-  : "";
-
 export const App = () => {
   
   /* Para deployar los cambios, primero eliminar node_modules y package-lock.json, y del package.json
@@ -20,7 +15,7 @@ export const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter basename={basename}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />

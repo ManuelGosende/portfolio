@@ -1,15 +1,16 @@
-import { Typography } from "@mui/material";
+import { Typography, useTheme } from "@mui/material";
 import { Border, Container, FlexBox, Profession } from "../components";
 import { SkillsProgramming, SkillsDesign } from "../utils";
-import { theme } from "../theme/theme";
 import { useTranslation } from "react-i18next";
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 export const Skills = () => {
   const { t } = useTranslation();
+  const theme = useTheme();
   return (
     <Container
       id="skills"
-      backgroundImage="url('background-2.jpg')"
+      backgroundImage={`url('${getPublicUrl('background-2.jpg')}')`}
     >
       <Typography variant="h1" color="primary.light" textAlign="right">{t('skills.title')}</Typography>
       <Border>
@@ -22,12 +23,12 @@ export const Skills = () => {
         >
           <Profession
             profession={t('skills.programmer')}
-            icon="url('code-icon-black.png')"
+            icon={getPublicUrl('code-icon-black.png')}
             skills={ SkillsProgramming }
           />
           <Profession
             profession={t('skills.designer')}
-            icon="url('design-icon-black.png')"
+            icon={getPublicUrl('design-icon-black.png')}
             skills={ SkillsDesign }
           />
         </FlexBox>

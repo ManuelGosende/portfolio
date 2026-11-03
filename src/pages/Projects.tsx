@@ -3,6 +3,7 @@ import { Container, Border } from "../components";
 import { projects } from "../data/projects";
 import { ProjectCard } from "../components/ProjectCard";
 import { useEffect } from "react";
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 export const Projects = () => {
   const theme = useTheme();
@@ -17,7 +18,7 @@ export const Projects = () => {
   return (
     <Container
       id="projectsGrid"
-      backgroundImage={`url('${process.env.PUBLIC_URL}/background-1.jpg')`}
+      backgroundImage={`url('${getPublicUrl('background-1.jpg')}')`}
     >
       <Border
         style={{

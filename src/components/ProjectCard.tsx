@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import { FlexBox } from "./FlexBox";
 import { useTranslation } from "react-i18next";
 import { Image } from "./Image";
+import { getPublicUrl } from "../utils/getPublicUrl";
 
 interface ProjectCardProps {
   title: string;
@@ -29,7 +30,7 @@ export const ProjectCard = ({
             width="100%"
             height="100%"
             aspectRatio="16 / 16"
-            image={`url('${cover}')`}
+            image={`url('${getPublicUrl(cover)}')`}
           />
         </div>
 
